@@ -1,5 +1,4 @@
-//titre acceuil
-gsap.from("",{duration:2, y:-800});
+
 // array.from() permet de crée un tableau des element recueprer
 const forhover = Array.from(document.getElementsByClassName('forhover'))
 const all = forhover.length

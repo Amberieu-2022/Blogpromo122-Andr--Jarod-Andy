@@ -1,8 +1,8 @@
-<article id="articles">
+<?php get_header(); ?>
+<article id="page-apprenant">
     <div id="title">
         <h1>Qui sommes-nous ?</h1>
         </br>
-        <h2>Promo 122 Online Formapro</h2>
     </div>
     <div id="txtpres">
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi cupiditate ut id sint aliquam, fugiat mollitia accusantium unde et illum tempore, incidunt nisi soluta dolorum animi alias delectus iure autem explicabo, facere enim. Rem repellat eius corporis corrupti. Consequatur illo repudiandae ullam aperiam soluta deleniti exercitationem unde rem, facilis optio!</p>
@@ -69,3 +69,5 @@
         <a class="prev" id="prevbtn">&#10094</a>
         <a class="next" id="nextbtn">&#10095</a>
     </div>
+
+<?php get_footer(); ?>
