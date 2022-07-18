@@ -552,7 +552,7 @@ article{
   /* The typewriter cursor effect */
 @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: rgb(123, 230, 29); }
+    50% { border-color: #09802bc7; }
 }
 
 #title > h2 {
