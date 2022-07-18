@@ -11,13 +11,19 @@
     <aside class="tags-aside">
         <h3>Tags</h3>
         <div class="tags-title">
-        <?php foreach ($query->terms as $tag) : ?>
-            <?php if($tag->count > 0){ ?>
-                <a href="<?= get_term_link($tag->term_id); ?>">
-                    <?= $tag->name ?>
-                </a>
-            <?php } ?>
-        <?php endforeach ?>
+        <?php
+            $args = array('exclude' => '36 17'); // voir les explications plus bas
+            $alltags = get_tags( $args );
+            shuffle($alltags);
+            $count=0;
+            if ($alltags) {
+                foreach($alltags as $tag) {
+                    $count++;
+                    echo '<a href="'.get_tag_link($tag->term_id).'">'.$tag->name.'</a>';
+            if( $count >19 ) break;
+            }
+        }
+        ?>
         </div>
     </aside>
     <aside class="aside-posts">
