@@ -1,11 +1,3 @@
-<?php 
-    $query = new WP_Term_Query([
-        'taxomony' => 'post_tag',
-        'hide_empty' => false,
-        'orderby' => 'count',
-        'order' => 'DESC',
-    ])
-?>
 
 <div class="vertical">
     <aside class="tags-aside">
