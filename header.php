@@ -32,11 +32,10 @@
         <nav id="categorie">
             <h1>Choisir une catégorie</h1>
             <ul>
-                <li><a href="">►Securité</a></li>
-                <li><a href="">►Maintenance</a></li>
-                <li><a href="">►Jeux</a></li>
-                <li><a href="">►Reseaux</a></li>
-                <li><a href="">►Programmation</a></li>
+                <li><a class="forhover test"  href="<?php echo get_category_link(8); ?>"><?php echo get_cat_name(8); ?></a></li>
+                <li><a class="forhover test"  href="<?php echo get_category_link(1); ?>"><?php echo get_cat_name(1); ?></a></li>
+                <li><a class="forhover test" href="<?php echo get_category_link(7); ?>"><?php echo get_cat_name(7); ?></a></li>
+                <li><a class="forhover test" href="<?php echo get_category_link(6); ?>"><?php echo get_cat_name(6); ?></a></li>
             </ul>
         </nav>
     </nav>

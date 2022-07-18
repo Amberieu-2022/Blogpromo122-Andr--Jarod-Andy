@@ -703,9 +703,13 @@ footer > p {
     #head > ul > li {
         font-size: 20px;
     }
+    nav#head {
+        flex-direction: column;
+        display: flex;
+        justify-content: space-around;
+    }
 }
 @media screen and (max-width:817px){
-    
     #categorie > h1{
         font-size: 20px;
     }
