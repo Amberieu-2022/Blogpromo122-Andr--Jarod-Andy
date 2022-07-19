@@ -11,7 +11,7 @@
     <header>
         <nav id="head"> 
             <div class="logo">
-                <img src="<?php echo get_template_directory_uri(); ?>/inc/img/IMG_0097" style="width: 130px; height: 130px" href="index.php">
+                <img src="<?php echo get_template_directory_uri(); ?>/inc/img/IMG_0097" style="width: 130px; height: 130px" alt="index.php">
             </div>
             <ul id="menu">
                 <li><a class="forhover test" href="index.php">Les + populaires</a></li>

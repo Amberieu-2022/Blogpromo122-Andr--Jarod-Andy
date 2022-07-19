@@ -375,7 +375,7 @@ section.categorie-name > h2 {
     margin: 1%;
     flex-direction: column;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     position: relative;
     border-radius: 3px;
@@ -395,9 +395,12 @@ section.categorie-name > h2 {
     color:rgba(0, 0, 0, 0.8);
     font-family: Georgia, 'Times New Roman', Times, sans-serif;
     text-align:center;
-    line-height: 3rem;
-    font-size: 1.8vw;
+    margin: 1.5%;
+    line-height: 2rem;
+    font-size: 1.5vw;
     font-weight: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .post-title-cat > a {
     display: block;
@@ -535,7 +538,7 @@ article{
     text-transform: uppercase;
     overflow: hidden; 
     /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid rgba(0, 128, 0, 0.8); /* The typwriter cursor */
+    border-right: .15em solid #09802bc7; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     animation: 
@@ -568,7 +571,6 @@ article{
     padding: 2%;
     border: 1px solid rgba(0, 0, 0, 0.189);
     box-shadow: 3px 3px 3px grey;
-    border-radius: 20px;
     text-align: center;
     margin-bottom: 3%;
 }
@@ -704,16 +706,46 @@ footer > p {
     nav#head {
         flex-direction: column;
         display: flex;
-        justify-content: space-around;
+    }
+    div.post-cat {
+        width: 70%;
+    }
+    div.vertical {
+        width: 30%;
+    }
+    div.article-one {
+        flex-direction: column;
     }
 }
-@media screen and (max-width:817px){
+@media screen and (max-width:880px){
+    main.first {
+        flex-direction: column;
+    }
+    section.first-post {
+        width: 100%;
+    }
+    div.vertical {
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    aside.tags-aside {
+        width: 80%;
+    }
+    ul#menu {
+        display: none;
+    }
+    .welcome > h3 {
+        font-size: 1.5rem;
+    }
     #categorie > h1{
         font-size: 20px;
     }
     #categorie > ul > li > a{
         padding:20px ;
-        font-size: 0.75rem;
+        font-size: 1.3rem;
     }
 }
 @media screen and (max-width:728px){
