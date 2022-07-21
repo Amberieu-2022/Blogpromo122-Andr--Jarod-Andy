@@ -61,7 +61,7 @@
         ) );
         
     }
-    add_action( 'widgets_init', 'carbon_widgets_init' );
+    add_action( 'widgets_init', 'carbon_widgets_init','ecrisfdp' );
    
     
     
